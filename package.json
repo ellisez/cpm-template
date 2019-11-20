@@ -1,0 +1,14 @@
+{
+  "name": "cpm-template",
+  "version": "1.0.0",
+  "description": "cpm teamplate for front-end",
+  "scripts": {
+    "h5": "h5 serve --open",
+    "wx": "wx serve --open",
+    "android": "android serve --open",
+    "ios": "ios serve --open"
+  },
+  "dependencies": {
+    "@cpm/platform": "file:../@cpm-platform"
+  }
+}

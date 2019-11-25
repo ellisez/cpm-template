@@ -9,6 +9,9 @@
     "ios": "ios serve --open"
   },
   "dependencies": {
-    "@cpm/platform": "file:../@cpm-platform"
+    "@cpm/runtime": "^1.0.0"
+  },
+  "devDependencies": {
+    "@cpm/core": "^1.0.0"
   }
 }

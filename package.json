@@ -1,5 +1,5 @@
 {
-  "name": "cpm-template",
+  "name": "@cpm/template",
   "version": "1.0.0",
   "description": "cpm teamplate for front-end",
   "scripts": {

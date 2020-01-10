@@ -1,0 +1,52 @@
+@import url('./varible.less');
+.info {
+  text-align: left;
+  font-size: 14px;
+  // overflow: hidden;
+  .name {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 12px 0;
+    line-height: 22px;
+  }
+  .title {
+    padding: 10px  0.26rem 0 12px; 
+    line-height: 20px;
+    color: @font-color-dark;
+    position: relative;
+    .status {
+      width: 52px;
+      height: 26px;
+      border:1px solid rgba(101,187,14,1);
+      color: #65BB0E;
+      border-radius: 13px;
+      line-height: 24px;
+      text-align: center;
+      position: absolute;
+      top: -20px;
+      right: 0.22rem;
+      &.auditing {
+        border:1px solid #9b9b9b;
+        color: #9b9b9b;
+      }
+      &.faild {
+        border:1px solid #d93639;
+        color: #d93639;
+      }
+    }
+  }
+  .to-answer {
+    line-height: 22px;
+    color: #B796FF;
+    padding: 0 12px;
+    display: inline-block;
+  }
+}
+.gray10 {
+  height: 10px;
+  background-color: #f2f2f2;
+  margin-top: 12px;
+}
+.lists {
+  padding: 15px 0.12rem 0;
+}

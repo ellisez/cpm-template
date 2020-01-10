@@ -1,0 +1,24 @@
+#!/bin/sh
+
+cwd=$(pwd)
+
+basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+
+sourceDir=$(sed 's/\/[^\/]\+\/[^\/]\+\/[^\/]\+$//g' <<< "$basedir")
+
+cd "$sourceDir"
+
+case `uname` in
+    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
+esac
+
+if [ -x "$basedir/node" ]; then
+  "$basedir/node"  "$sourceDir/node_modules/@cpm/core/bin/h5.js" "$@"
+  ret=$?
+else
+  node  "$sourceDir/node_modules/@cpm/core/bin/h5.js" "$@"
+  ret=$?
+fi
+
+cd "$cwd"
+exit $ret

@@ -1,0 +1,107 @@
+@import url('./varible.less');
+.question {
+  text-align: left;
+  color: @font-color-dark;
+  overflow: hidden;
+  box-shadow:0px 0px 8px 0px rgba(0,0,0,0.06);
+  border-radius:4px;
+  padding: 0.18rem 0.07rem 0.12rem 0.13rem;
+  margin-bottom: 10px;
+  .top   {
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .title {
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    &.hide {
+      padding-right: 0.48rem;
+    }
+  }
+  .nums {
+    line-height: 32px;
+    overflow: hidden;
+    line-height: 30px;
+    padding: 4px 0;
+    .date {
+      width: 0.8rem;
+      background: url('@{icon}/date.png') no-repeat left center;
+      background-size: 0.14rem auto;
+      padding-left: 0.2rem;
+      float: left;
+    }
+    .read {
+      width: 0.93rem;
+      background: url('@{icon}/read.png') no-repeat left center;
+      background-size: 0.18rem auto;
+      padding-left: 0.26rem;
+      float: left;
+    }
+    .praise {
+      background: url('@{icon}/xue_zan.png') no-repeat left center;
+      background-size: 0.18rem auto;
+      padding-left: 0.2rem;
+      float: left;
+    }
+  }
+
+
+  
+  .answer-info {
+    line-height: 36px;
+    color: @font-color-light;
+    &>div {
+      float: left;
+    }
+    .time {
+      // float: right;
+      padding-left: 0.2rem;
+      background: url('@{icon}/date.png') no-repeat left center;
+      background-size: 0.15rem auto;
+    }
+    .listen {
+      width: 70%;
+      color:#CAC8F1;
+      background:rgba(234,238,246,1) url('@{img}/playing.png') no-repeat 14px center;
+      background-size: 0.15rem auto;
+      padding-left: 0.46rem;
+      margin-right: 0.11rem;
+      &.playing {
+        background:rgba(234,238,246,1) url('@{img}/playing.gif') no-repeat 10px center;
+        background-size: 0.22rem auto;
+      }
+    }
+    .praise {
+      background: url('@{icon}/praise-light.png') no-repeat left center;
+      background-size: 0.14rem auto;
+      padding-left: 0.2rem;
+      float: left;
+      margin-left: 0.2rem;
+    }
+    .listen-num {
+      float: right;
+    }
+  }
+
+  .answer-btn {
+    width:42px;
+    height:30px;
+    background:linear-gradient(125deg,rgba(157,110,248,1) 0%,rgba(118,111,243,1) 100%);
+    box-shadow:0px 2px 4px 0px rgba(186,119,255,0.4);
+    border-radius:15px;
+    color: #fff;
+    line-height: 30px;
+    position: absolute;
+    right: 7px;
+    top: 4px;
+    text-align: center;
+  }
+}

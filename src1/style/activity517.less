@@ -1,0 +1,239 @@
+@import url('src1/style/varible.less');
+.act-info {
+  position: relative;
+  .act-box {
+    width: 100%;
+    position: absolute;
+    top: 23.5%;
+    left: 0;
+  }
+  .info-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 17%;
+    img {
+      width: 0.66rem;
+      height: 0.66rem;
+      margin-bottom: 20px;
+    }
+  }
+  .rules-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18%;
+    position: absolute;
+    left: 0;
+    bottom: 6%;
+    .rule-btn {
+      width: 1.08rem;
+      color: #fff;
+      position: relative;
+      &.active {
+        color: #D7D7D7;
+      }
+      div   {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        line-height: 0.39rem;
+      }
+    }
+  }
+}
+
+.banner-box {
+  position: relative;
+  overflow: hidden;
+}
+.banner {
+  width: 100%;
+  position: absolute;
+  left: 0.16rem;
+  top: 11px;
+  .banner-info {
+    width: 1.19rem;
+    position: absolute;
+    left: -1.5rem;
+    top: 0px;
+    transform-origin:center center;
+    transform: scale(0.65);
+    transition: all .5s linear;
+    &.active {
+      left: 1.12rem;
+      transform: scale(1);
+    }
+    &.next {
+      left: 2.4rem;
+      transform: scale(0.86);
+    }
+    &.next-2 {
+      left: 3.4rem;
+      transform: scale(0.65);
+    }
+    &.right {
+      left: 4rem;
+      transform: scale(0.5);
+    }
+    &.prod {
+      left: -0.16rem;
+      transform: scale(0.86);
+    }
+
+    .good-img {
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      transform: translate(-50%);
+      &.up {
+        top: 30px;
+      }
+    }
+
+
+    .goods {
+      .goods-des {
+        width: 90%;
+        text-align: center;
+        background:rgba(34,34,34,1);
+        border-radius:4px;
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 6px;
+        .strong {
+          font-size: 13px;
+          color: #fff;
+        }
+        .des {
+          font-size: 10px;
+          color: #898989;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}
+.my-goods {
+  text-align: center;
+  .act-btn {
+    margin-top: 0.1rem;
+  }
+}
+.activity-rules {
+  text-align: left;
+  .popup-info {
+    padding: 0 13px;
+    padding-top: 15px;
+  }
+  .act-btn {
+    margin-top: 0.1rem;
+  }
+}
+.one-info {
+  width: 100%;
+  position: absolute;
+  top: 23%;
+  left: 0;
+  color: #fff;
+  .score-name {
+    font-size: 0.2rem;
+    margin-bottom: 8px;
+  }
+  .score-body {
+    font-size: 0.16rem;
+  }
+}
+
+.popup-info {
+  background: url(src1/assets/517/middle.png) repeat-y left top;
+  background-size: 100%;
+  overflow: hidden;
+  padding-top: 15px;
+  color: #fff;
+  .info {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .head {
+    font-size: 0.16rem;
+    color: #fff;
+    font-weight: 700;
+    &.rules {
+      font-size: 0.18rem;
+      margin-bottom: 0.17rem;
+    }
+  }
+  .body {
+    font-size: 0.12rem;
+    color: #d8d8d8;
+    padding: 5px 0 11px 0;
+    &.rules {
+      font-size: 0.14rem;
+      margin-bottom: 0.11rem;
+    }
+  }
+
+}
+.act-btn {
+  width: 1.5rem;
+  margin: 20px auto;
+  margin-top: 0.9rem;
+  font-size: 0.16rem;
+  div {
+    width: 100%;
+    text-align: center;
+    line-height: 0.38rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0
+  }
+}
+.topic {
+  text-align: left;
+  font-size: 0.18rem;
+  .act-btn{
+    margin-top: 20px;
+  }
+  .topic-name {
+    padding: 0 15px;
+  }
+  .answers {
+    padding: 0 30px;
+    .answer-info {
+      padding: 0.08rem 0;
+      padding-left: 0.25rem;
+      background: url(src1/assets/517/answer-info.png) no-repeat left center;
+      background-size: 0.16rem 0.16rem;
+      &.active {
+        background: url(src1/assets/517/answer-info-a.png) no-repeat left center;
+        background-size: 0.16rem 0.16rem;
+      }
+    }
+  }
+}
+.no-toast {
+  padding: 50px 0 70px 0;
+}
+.time {
+  font-size: 0.2rem;
+  color: #969696;
+  padding: 10px 0 0 0;
+  span {
+    font-size: 0.24rem;
+    padding: 0 5px;
+  }
+}

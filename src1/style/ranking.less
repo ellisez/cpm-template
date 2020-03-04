@@ -1,0 +1,124 @@
+@import url('src1/style/varible.less');
+.box {
+  width: 100%;
+  overflow: hidden;
+}
+.tab {
+  width: 2.93rem;
+  height: 40px;
+  // border: 1px solid #4A31E3;
+  border-radius: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 38px;
+  color: #4A31E3;
+  overflow: hidden;
+  &>div {
+    width: 50%;
+  }
+  .month {
+    border: 1px solid #4A31E3;
+    border-radius: 20px 0 0 20px;
+  }
+  .total {
+    border: 1px solid #4A31E3;
+    border-radius: 0 20px 20px 0;
+  }
+  .active {
+    background-color: #4A31E3;
+    color: #fff;
+  }
+}
+
+.status-title {
+  padding: 5px 14px 0 12px;
+  line-height: 20px;
+  overflow: hidden;
+  .sort {
+    float: left;
+    color: #4A31E3;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .info {
+    float: right;
+    color: #9B9B9B;
+  }
+}
+
+.lists {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.item {
+  padding: 0.1rem 0.14rem 0.13rem 0.03rem;
+  overflow: hidden;
+  border-bottom: 1px solid  rgba(151,151,151,0.1);
+  &.mine {
+    width:100%;
+    padding: 0.15rem 0.15rem 0.15rem 0.12rem;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0
+  }
+  .serial {
+    width: 12%;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    &.first {
+      background: url('@{img}/first.png') no-repeat center center;
+      background-size: 0.2rem auto;
+    }
+    &.second {
+      background: url('@{img}/second.png') no-repeat center center;
+      background-size: 0.2rem auto;
+    }
+    &.third {
+      background: url('@{img}/third.png') no-repeat center center;
+      background-size: 0.2rem auto;
+    }
+  }
+  .img   {
+    width: 12%;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 0.08rem;
+  }
+  .user {
+    float: left;
+    line-height: 18px;
+    text-align: left;
+    width: 50%;
+
+    .addr {
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      color: @font-color-light;
+      font-size: 12px;
+    }
+  }
+  .time-box {
+    width: 20%;
+    float: right;
+    line-height: 18px;
+    text-align: right;
+    .time {
+      color: #4831E0;
+      font-weight: 700;
+    }
+    .info{
+      color: @font-color-light;
+      font-size: 12px;
+    }
+  }
+}
+.height100 {
+  height: 70px;
+}

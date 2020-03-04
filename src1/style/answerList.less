@@ -1,0 +1,30 @@
+@import url('src1/style/varible.less');
+.box {
+  min-height: 100%;
+  background-color: #fff;
+}
+input {
+  border: 0;
+}
+.search {
+  padding: 5px 17px 5px 12px;
+  box-shadow:0px 0px 4px 0px rgba(0,0,0,0.2);
+  background-color: #fff;
+}
+.search .input{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding-left: 33px;
+  background:#f2f2f2 url("@{icon}/search.png") no-repeat 10px center;
+  background-size: 12px 13px;
+  text-align: left;
+  color: @font-color-light;
+}
+.search .input input::placeholder {
+  color: #9B9B9B;
+}
+.lists {
+  padding: 12px;
+}

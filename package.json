@@ -28,6 +28,7 @@
     "vue2-touch-events": "^2.1.0"
   },
   "devDependencies": {
-    "@cpm/core": "^1.0.0"
+    "@cpm/core": "^1.0.0",
+    "@cpm/weex-loader": "file:../weex-loader"
   }
 }

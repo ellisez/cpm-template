@@ -1,0 +1,74 @@
+@import url('src1/style/varible.less');
+.video-list {
+  line-height: 20px;
+  width: 1.69rem;
+  margin-bottom: 10px;
+  .img {
+    padding-top: 75%;
+    position: relative;
+    border-radius: 5px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 5px;
+    }
+    .video-icon {
+      width: 0.32rem;
+      height: 0.32rem;
+      background: rgba(0, 0, 0, .3) url(http://studioimage.yxj.org.cn/1545284252966.png) no-repeat center center;
+      background-size: 0.09rem 0.13rem;
+      border-radius: 50%;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+  .title {
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+    text-align: left;
+    line-height: 20px;
+    height: 40px;
+  }
+  .nums {
+    color: @font-color-dark;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 10px;
+    padding: 0.05rem 0;
+    line-height: 0.2rem;
+    .date {
+      width: 40%;
+      float: left;
+    }
+    .praise {
+      float: left;
+      // height: 0.16rem;
+      padding-left: 20px;
+      color: #9B9B9B;
+      // background: url('@{icon}/praise.png') no-repeat 3px center;
+      background: url('@{icon}/read_icon.png') no-repeat 0px center;
+      background-size: 0.16rem 0.11rem;
+      background-position-y: 0.04rem;
+    }
+    .label {
+      float: left;
+      max-width: 1rem;
+      min-width: 0.46rem;
+      text-align: center;
+      font-size: 0.11rem;
+      padding: 0.02rem 5px;
+      line-height: 0.12rem;
+      color: #9b9b9b;
+      border: 1px solid rgba(0, 0, 0, .2);
+      border-radius:0.11rem;
+      margin-right: 0.1rem;
+    }
+  }
+}

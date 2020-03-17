@@ -10,7 +10,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@cpm/core": "file:../cpm-core"
+		"@cpm/core": "^1.0.0"
 	},
 	"properties": {
 		"type": "project",

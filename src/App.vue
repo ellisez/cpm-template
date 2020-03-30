@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="less">
+  @import './app.less';
 .abc {
   color: white;
 }
